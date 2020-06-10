@@ -10,7 +10,7 @@ var BAR_WIDTH = 40;
 var BAR_HEIGHT = 150;
 var BAR_GAP = 50;
 var BAR_DOWN = 30;
-var TEXT_COLOR = '#000'
+var TEXT_COLOR = '#000';
 
 
 var renderCloud = function (ctx, x, y, color) {
@@ -30,9 +30,9 @@ var getMaxElement = function (arr) {
   return maxElement;
 };
 
-var getRandomBlueColor = function (player) {
+var getRandomBlueColor = function () {
   return 'hsl(240, ' + Math.floor(Math.random() * 100) + '%, 50%)';
-}
+};
 
 window.renderStatistics = function (ctx, players, times) {
   renderCloud(ctx, CLOUD_X + GAP, CLOUD_Y + GAP, 'rgba(0, 0, 0, 0.7)');
